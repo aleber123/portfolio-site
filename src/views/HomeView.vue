@@ -183,13 +183,12 @@ const projects = [
   {
     type: 'Personal Portfolio',
     title: 'Portfolio Website',
-    description: 'Min personliga portfolio-webbplats byggd med Vue 3 och Vite. Sidan visar mina projekt och färdigheter som utvecklare. Implementerad med fokus på modern design, responsivitet och användarupplevelse.',
-    technologies: ['Vue.js 3', 'Vite', 'HTML5/CSS3', 'JavaScript', 'Git/GitHub'],
+    description: 'Min personliga portfolio-webbplats byggd med Vue 3 och Vite. En modern och responsiv plattform för att visa mina projekt och färdigheter som utvecklare.',
+    technologies: ['Vue.js 3', 'Vite', 'HTML5/CSS3', 'JavaScript'],
     features: [
       'Responsiv design',
       'Modern UI/UX',
       'Projektgalleri',
-      'Kontaktformulär',
       'Animationer'
     ],
     githubUrl: 'https://github.com/aleber123/portfolio-site',
@@ -197,64 +196,46 @@ const projects = [
     image: '/projects/portfolio.png'
   },
   {
-    type: 'Examensarbete',
-    title: 'Hållbar Webbdesign',
-    description: 'Utvecklade en fullskalig webbapplikation som demonstrerar hållbara designprinciper. Implementerade energieffektiv kod, optimerade bilder och resurser, samt följde WCAG 2.1 riktlinjer för tillgänglighet. Projektet inkluderar realtidsövervakning av koldioxidavtryck.',
-    technologies: ['React', 'Node.js', 'Performance Metrics API', 'WCAG 2.1', 'Lighthouse'],
+    type: 'Fullstack Projekt',
+    title: 'Building Control',
+    description: 'Ett modernt byggkontrollsystem utvecklat med TypeScript. Projektet fokuserar på att effektivisera och digitalisera byggprocesser med modern teknik.',
+    technologies: ['TypeScript', 'Modern JavaScript', 'Git/GitHub'],
     features: [
-      'Energieffektiv kodarkitektur',
-      'Automatiserad prestanda-optimering',
-      'Tillgänglighetsanpassat gränssnitt',
-      'Realtidsmätning av resursutnyttjande'
+      'Byggkontrollsystem',
+      'TypeScript implementation',
+      'Effektiv processhantering'
     ],
-    githubUrl: '#',
+    githubUrl: 'https://github.com/aleber123/building-control',
     liveUrl: '#',
-    image: '/projects/sustainable-web.png'
+    image: '/projects/building.png'
   },
   {
-    type: 'Frontend Projekt',
-    title: 'Quiz Game för Barn',
-    description: 'Ett pedagogiskt quiz-spel utvecklat med Vue 3 och Firebase. Spelet använder gamification för att göra lärande roligt och engagerande för barn. Implementerade realtids-multiplayer och progressspårning.',
-    technologies: ['Vue 3', 'Composition API', 'Firebase', 'Vite', 'TailwindCSS'],
+    type: 'Interaktiv Applikation',
+    title: 'Quiz App',
+    description: 'En interaktiv quiz-applikation byggd med JavaScript. Användare kan testa sina kunskaper inom olika områden genom ett användarvänligt gränssnitt.',
+    technologies: ['JavaScript', 'HTML5', 'CSS3'],
     features: [
-      'Realtids multiplayer-funktionalitet',
-      'Progressiv webb-app (PWA)',
-      'Offline-stöd med local storage',
-      'Animerade spelinteraktioner'
+      'Interaktiva frågor',
+      'Poängräkning',
+      'Responsiv design'
     ],
-    githubUrl: '#',
+    githubUrl: 'https://github.com/aleber123/QuizApp',
     liveUrl: '#',
-    image: '/projects/quiz-game.png'
+    image: '/projects/quiz.png'
   },
   {
-    type: 'UX/Frontend Projekt',
-    title: 'E-handelsplattform',
-    description: 'Utvecklade en modern e-handelsplattform med fokus på användarupplevelse och konverteringsoptimering. Implementerade avancerade filtreringsfunktioner och snabb produktsökning.',
-    technologies: ['React', 'Redux Toolkit', 'Stripe API', 'Framer Motion', 'Styled Components'],
+    type: 'Webbapplikation',
+    title: 'Real Estate Platform',
+    description: 'En modern fastighetsplattform som förenklar processen att hitta och visa fastigheter. Projektet demonstrerar användning av moderna webbutvecklingstekniker.',
+    technologies: ['Modern JavaScript', 'Responsive Design', 'Web APIs'],
     features: [
-      'Optimerad checkout-process',
-      'Realtids lagerhantering',
-      'Avancerad produktfiltrering',
-      'Responsiv produktvisning'
+      'Fastighetssökning',
+      'Bildgalleri',
+      'Kontaktformulär'
     ],
-    githubUrl: '#',
+    githubUrl: 'https://github.com/aleber123/RealEstate',
     liveUrl: '#',
-    image: '/projects/ecommerce.png'
-  },
-  {
-    type: 'UI/UX Projekt',
-    title: 'Design System för Vårdapplikationer',
-    description: 'Skapade ett omfattande design system för vårdrelaterade webbapplikationer med fokus på tillgänglighet och användarvänlighet. Implementerade återanvändbara komponenter och dokumentation.',
-    technologies: ['React', 'Storybook', 'Styled Components', 'Jest', 'Figma'],
-    features: [
-      'WCAG 2.1 kompatibla komponenter',
-      'Interaktiv komponentdokumentation',
-      'Automatiserade tester',
-      'Designsystem dokumentation'
-    ],
-    githubUrl: '#',
-    liveUrl: '#',
-    image: '/projects/healthcare-design.png'
+    image: '/projects/realestate.png'
   }
 ]
 
