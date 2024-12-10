@@ -192,8 +192,7 @@ const projects = [
       'TypeScript implementation'
     ],
     githubUrl: 'https://github.com/aleber123/designsystem',
-    liveUrl: null,
-    image: '/projects/nordic-design.png'
+    liveUrl: 'https://aleber123.github.io/designsystem/'
   },
   {
     type: 'Personal Portfolio',
