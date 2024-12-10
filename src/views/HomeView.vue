@@ -15,7 +15,7 @@
         <div class="fade-up cta-buttons" role="navigation" aria-label="Primär navigation">
           <a href="#projects" class="btn" aria-label="Se mina projekt">Se mina projekt</a>
           <a href="#about" class="btn btn-outline" aria-label="Läs mer om mig">Om mig</a>
-          <a href="mailto:alexander.bergqvist@gmail.com" class="btn btn-outline" aria-label="Skicka ett mail till mig">Kontakta mig</a>
+          <a href="mailto:alexander.bergqvist@gmail.com" class="btn btn-outline" aria-label="Skicka ett mail till mig">Mail</a>
         </div>
       </div>
     </section>
@@ -106,7 +106,7 @@
                     <span class="icon" aria-hidden="true">📂</span>
                     <span>Källkod</span>
                   </a>
-                  <a :href="project.liveUrl" target="_blank" rel="noopener noreferrer" class="btn" :aria-label="'Se live demo av ' + project.title">
+                  <a v-if="project.liveUrl" :href="project.liveUrl" target="_blank" rel="noopener noreferrer" class="btn" :aria-label="'Se live demo av ' + project.title">
                     <span class="icon" aria-hidden="true">🔗</span>
                     <span>Live Demo</span>
                   </a>
@@ -125,7 +125,7 @@
         <div class="contact-info" role="navigation" aria-label="Sociala medier och kontakt">
           <a href="mailto:alexander.bergqvist@gmail.com" class="contact-link" aria-label="Skicka mail">
             <i class="fas fa-envelope" aria-hidden="true"></i>
-            alexander.bergqvist@gmail.com
+            Mail
           </a>
           <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="Besök min GitHub profil">
             <i class="fab fa-github" aria-hidden="true"></i>
@@ -181,6 +181,21 @@ onUnmounted(() => {
 
 const projects = [
   {
+    type: 'Komponentbibliotek',
+    title: 'Nordic Design System',
+    description: 'Ett modernt och tillgängligt komponentbibliotek byggt med Vue 3 och TypeScript. Fokus på WCAG 2.1 tillgänglighet och användarvänlig design.',
+    technologies: ['Vue 3', 'TypeScript', 'WCAG 2.1', 'Vite'],
+    features: [
+      'Tillgängliga komponenter',
+      'Swipe-funktionalitet',
+      'Responsiv design',
+      'TypeScript implementation'
+    ],
+    githubUrl: 'https://github.com/aleber123/designsystem',
+    liveUrl: null,
+    image: '/projects/nordic-design.png'
+  },
+  {
     type: 'Personal Portfolio',
     title: 'Portfolio Website',
     description: 'Min personliga portfolio-webbplats byggd med Vue 3 och Vite. En modern och responsiv plattform för att visa mina projekt och färdigheter som utvecklare.',
@@ -196,20 +211,6 @@ const projects = [
     image: '/projects/portfolio.png'
   },
   {
-    type: 'Fullstack Projekt',
-    title: 'Building Control',
-    description: 'Ett modernt byggkontrollsystem utvecklat med TypeScript. Projektet fokuserar på att effektivisera och digitalisera byggprocesser med modern teknik.',
-    technologies: ['TypeScript', 'Modern JavaScript', 'Git/GitHub'],
-    features: [
-      'Byggkontrollsystem',
-      'TypeScript implementation',
-      'Effektiv processhantering'
-    ],
-    githubUrl: 'https://github.com/aleber123/building-control',
-    liveUrl: '#',
-    image: '/projects/building.png'
-  },
-  {
     type: 'Interaktiv Applikation',
     title: 'Quiz App',
     description: 'En interaktiv quiz-applikation byggd med JavaScript. Användare kan testa sina kunskaper inom olika områden genom ett användarvänligt gränssnitt.',
@@ -220,8 +221,22 @@ const projects = [
       'Responsiv design'
     ],
     githubUrl: 'https://github.com/aleber123/QuizApp',
-    liveUrl: '#',
+    liveUrl: 'https://aleber123.github.io/quiz/',
     image: '/projects/quiz.png'
+  },
+  {
+    type: 'Fullstack Projekt',
+    title: 'Building Control',
+    description: 'Ett modernt byggkontrollsystem utvecklat med TypeScript. Projektet fokuserar på att effektivisera och digitalisera byggprocesser med modern teknik.',
+    technologies: ['TypeScript', 'Modern JavaScript', 'Git/GitHub'],
+    features: [
+      'Byggkontrollsystem',
+      'TypeScript implementation',
+      'Effektiv processhantering'
+    ],
+    githubUrl: 'https://github.com/aleber123/building-control',
+    liveUrl: null,
+    image: '/projects/building.png'
   },
   {
     type: 'Webbapplikation',
@@ -234,7 +249,7 @@ const projects = [
       'Kontaktformulär'
     ],
     githubUrl: 'https://github.com/aleber123/RealEstate',
-    liveUrl: '#',
+    liveUrl: null,
     image: '/projects/realestate.png'
   }
 ]
