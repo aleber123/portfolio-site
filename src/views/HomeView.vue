@@ -181,6 +181,22 @@ onUnmounted(() => {
 
 const projects = [
   {
+    type: 'Personal Portfolio',
+    title: 'Portfolio Website',
+    description: 'Min personliga portfolio-webbplats byggd med Vue 3 och Vite. Sidan visar mina projekt och färdigheter som utvecklare. Implementerad med fokus på modern design, responsivitet och användarupplevelse.',
+    technologies: ['Vue.js 3', 'Vite', 'HTML5/CSS3', 'JavaScript', 'Git/GitHub'],
+    features: [
+      'Responsiv design',
+      'Modern UI/UX',
+      'Projektgalleri',
+      'Kontaktformulär',
+      'Animationer'
+    ],
+    githubUrl: 'https://github.com/aleber123/portfolio-site',
+    liveUrl: 'https://alexanderbergqvist.com',
+    image: '/projects/portfolio.png'
+  },
+  {
     type: 'Examensarbete',
     title: 'Hållbar Webbdesign',
     description: 'Utvecklade en fullskalig webbapplikation som demonstrerar hållbara designprinciper. Implementerade energieffektiv kod, optimerade bilder och resurser, samt följde WCAG 2.1 riktlinjer för tillgänglighet. Projektet inkluderar realtidsövervakning av koldioxidavtryck.',
